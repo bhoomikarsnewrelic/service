@@ -1,10 +1,9 @@
 
-type OrganizationStitchedFields {
-    health: String
-    getProductByID(id: String): Product
-    getAllProducts: [Product]
-
+schema {
+    query: Query
+    mutation: Mutation
 }
+
 
 type Mutation {
     createProduct(name: String, price: Float, quantity: Int): Product
@@ -12,8 +11,16 @@ type Mutation {
     deleteProduct(id: String): Boolean
 }
 
+type ActorStitchedFields {
+    health: String
+    products: [Product]
+}
+
+
 type Query {
-    organization: OrganizationStitchedFields
+    actor: ActorStitchedFields
+    getProductByID(id: String): Product
+    getAllProducts: [Product]
 }
 
 type Product {

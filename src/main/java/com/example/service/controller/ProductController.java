@@ -1,5 +1,6 @@
 package com.example.service.controller;
 
+import com.example.service.model.ActorStitchedFields;
 import com.example.service.model.Product;
 import com.example.service.service.ProductService;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -18,15 +19,17 @@ public class ProductController {
 
 
     @QueryMapping
-    public String health() {
-        System.out.println("health api");
-        return "Server is up and running!";
-    }
-
-    @QueryMapping
     public Product getProductByID(@Argument String id) {
         System.out.println("getProductByID api id: " + id);
         return productService.getProduct(id);
+    }
+
+    @QueryMapping
+    public ActorStitchedFields actor() {
+        ActorStitchedFields actor = new ActorStitchedFields();
+        actor.setHealth("server is up and running!");
+        actor.setProducts(productService.getAllProducts());
+        return actor;
     }
 
     @QueryMapping
