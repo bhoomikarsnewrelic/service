@@ -39,7 +39,7 @@ query: stitched under actor kindly refer the queryResolver of the demo app schem
 Mutations:
 <img width="1518" alt="Screenshot 2025-02-10 at 8 44 52 PM" src="https://github.com/user-attachments/assets/65b7fbbf-0b0d-42a1-a7d6-38c6b0866297" />
 here: https://staging-one.newrelic.com/nerdgraph-graphiql?use_local_service=public-nerd-graph!3100,public-one-nerd-graph!3100,public-rpm-api!3200 : pointing to locally running nerd-graph 
-you can very the same in proxies.json and nerd-graph.env:
+you can verify the same in proxies.json and nerd-graph.env:
 
 
 
