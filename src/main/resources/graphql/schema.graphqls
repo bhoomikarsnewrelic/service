@@ -1,0 +1,24 @@
+
+type OrganizationStitchedFields {
+    health: String
+    getProductByID(id: String): Product
+    getAllProducts: [Product]
+
+}
+
+type Mutation {
+    createProduct(name: String, price: Float, quantity: Int): Product
+    updateProduct(id: String, quantity: Int): Product
+    deleteProduct(id: String): Boolean
+}
+
+type Query {
+    organization: OrganizationStitchedFields
+}
+
+type Product {
+    id: String!
+    name: String
+    price: Float
+    quantity: Int
+}
