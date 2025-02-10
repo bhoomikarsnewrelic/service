@@ -4,6 +4,7 @@ Stitching graphql Service to local-nerdGraph
 
 Steps to run nerd-graph:
 
+* make sure local-service which you want to stich is up and running : clone this app do run mvn clean intall and start the server
 * make sure docker-desktop is installed from self-service
 * https://source.datanerd.us/after/nerd-graph/wiki/Running-NerdGraph-in-%22Local-NerdGraph-Mode%22#generate-a-proxiesjson-file : add this proxy to forward the request to local-service
 
@@ -16,8 +17,16 @@ under localNerdGraph
 
 <img width="941" alt="Screenshot 2025-02-10 at 8 34 46 PM" src="https://github.com/user-attachments/assets/93e5e29b-f23a-43a2-bd9e-033ea07ef711" />
 6. run .start to start local-nerd-graph
+7. stitched schemas(query-mutations) are visible under nerd-graph : 
+<img width="1518" alt="Screenshot 2025-02-10 at 8 44 52 PM" src="https://github.com/user-attachments/assets/65b7fbbf-0b0d-42a1-a7d6-38c6b0866297" />
+here: https://staging-one.newrelic.com/nerdgraph-graphiql?use_local_service=public-nerd-graph!3100,public-one-nerd-graph!3100,public-rpm-api!3200 : pointing to locally running nerd-graph 
+you can very the same in proxies.json and nerd-graph.env:
 
-running service:
+
+
+
+
+
 
 
 
