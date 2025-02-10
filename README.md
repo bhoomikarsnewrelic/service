@@ -1,6 +1,12 @@
 # service
 Stitching graphql Service to local-nerdGraph
 
+Demo-service-info:
+JAVA 21
+Maven project
+Springboot-graphql service
+DATASource: Inmempory : HashMAP
+
 
 Steps to run nerd-graph:
 
