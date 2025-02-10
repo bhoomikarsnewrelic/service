@@ -20,6 +20,7 @@ Steps to run nerd-graph:
 * make sure local-service which you want to stich is up and running : clone this app do run mvn clean intall and start the server
 * make sure docker-desktop is installed from self-service
 * https://source.datanerd.us/after/nerd-graph/wiki/Running-NerdGraph-in-%22Local-NerdGraph-Mode%22#generate-a-proxiesjson-file : add this proxy to forward the request to local-service
+* nerd-graph.env file to be created
 
 1. Set SSH key if you're logging-in for the first time : https://www.geeksforgeeks.org/how-to-fix-support-for-password-authentication-was-removed/
 2. git clone : git clone git@source.datanerd.us:after/nerd-graph.git
