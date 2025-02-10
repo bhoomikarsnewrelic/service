@@ -4,6 +4,8 @@ Stitching graphql Service to local-nerdGraph
 
 Steps to run nerd-graph:
 
+make sure docker-desktop is installed from self-service
+
 1. Set SSH key if you're logging-in for the first time : https://www.geeksforgeeks.org/how-to-fix-support-for-password-authentication-was-removed/
 2. git clone : git clone git@source.datanerd.us:after/nerd-graph.git
 under localNerdGraph
