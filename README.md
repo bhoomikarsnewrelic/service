@@ -18,6 +18,11 @@ under localNerdGraph
 <img width="941" alt="Screenshot 2025-02-10 at 8 34 46 PM" src="https://github.com/user-attachments/assets/93e5e29b-f23a-43a2-bd9e-033ea07ef711" />
 6. run .start to start local-nerd-graph
 7. stitched schemas(query-mutations) are visible under nerd-graph : 
+
+query: stitched under actor kindly refer the queryResolver of the demo app schema:
+<img width="1544" alt="Screenshot 2025-02-10 at 9 42 58 PM" src="https://github.com/user-attachments/assets/d6ee4404-430f-41ed-9cd0-879c7aa4e07a" />
+
+Mutations:
 <img width="1518" alt="Screenshot 2025-02-10 at 8 44 52 PM" src="https://github.com/user-attachments/assets/65b7fbbf-0b0d-42a1-a7d6-38c6b0866297" />
 here: https://staging-one.newrelic.com/nerdgraph-graphiql?use_local_service=public-nerd-graph!3100,public-one-nerd-graph!3100,public-rpm-api!3200 : pointing to locally running nerd-graph 
 you can very the same in proxies.json and nerd-graph.env:
