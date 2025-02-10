@@ -3,14 +3,14 @@ Stitching graphql Service to local-nerdGraph
 
 STEPS TO RUN Demo-service
 Demo-service-info:
-JAVA 21
-Maven project
-Springboot-graphql service
-DATASource: Inmempory : HashMAP
-serverURl: http://localhost:8080/graphiql
+* JAVA 21
+* Maven project
+* Springboot-graphql service
+* DATASource: Inmempory : HashMAP
+* serverURl: http://localhost:8080/graphiql
 <img width="1269" alt="Screenshot 2025-02-10 at 9 50 26 PM" src="https://github.com/user-attachments/assets/3dfe3ef2-5129-4cc8-be75-d37433da265e" />
 
-PostMan: http://localhost:8080/graphql
+* PostMan: http://localhost:8080/graphql
 <img width="1205" alt="Screenshot 2025-02-10 at 9 50 45 PM" src="https://github.com/user-attachments/assets/03315459-5642-4996-abc8-55ad6ff9566a" />
 
 
