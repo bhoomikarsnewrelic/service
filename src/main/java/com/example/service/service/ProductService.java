@@ -1,6 +1,7 @@
 package com.example.service.service;
 
 import com.example.service.model.Product;
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
 import java.util.*;
@@ -10,10 +11,14 @@ public class ProductService {
 
     private final Map<String, Product> productMap = new HashMap<>();
 
+    @Autowired
+    private ProductSubscriptionService productSubscriptionService;
+
 
     public Product addProduct(String name, Double price, Integer quantity) {
         Product product = new Product(UUID.randomUUID().toString(), name, price, quantity);
         productMap.put(product.getId(), product);
+        productSubscriptionService.emitEvent(product);
         return product;
     }
 
