@@ -14,11 +14,14 @@ public class ProductService {
     @Autowired
     private ProductSubscriptionService productSubscriptionService;
 
+    @Autowired
+    private KafkaProducerService kafkaProducerService;
+
 
     public Product addProduct(String name, Double price, Integer quantity) {
         Product product = new Product(UUID.randomUUID().toString(), name, price, quantity);
         productMap.put(product.getId(), product);
-        productSubscriptionService.emitEvent(product);
+        kafkaProducerService.sendMessage(product);
         return product;
     }
 

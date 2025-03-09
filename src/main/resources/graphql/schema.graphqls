@@ -3,6 +3,7 @@ schema {
     mutation: Mutation
     subscription: Subscription
 }
+
 type Subscription {
     productAdded: Product
 }
